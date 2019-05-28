@@ -40,3 +40,45 @@
 > rm -rf /var/cache/jenkins
 > rm -rf /var/lib/jenkins/
 ```
+
+
+## github配置
+
+##### sercret text
+**注：此处需要一个对项目有写权限的账户**
+
+进入github --> setting --> Personal Access Token --> Generate new token
+
+自己先保存此token，如果丢失，之后只能重新生成
+
+##### 进入jenkins系统管理中配置GitHub Plugin
+系统管理 --> 系统设置 --> GitHub --> Add GitHub Sever
+
+API URL 输入 https://api.github.com
+
+Credentials点击Add添加，Kind选择Secret Text 填入刚刚生成密文
+
+设置完成后，点击TestConnection,提示Credentials verified for user UUserName, rate limit: xxx,则表明有效。
+
+##### 创建一个流水线项目
+pic1
+
+填入github-webhook的参数
+pic2
+
+设置流水线脚本
+pic3
+
+完成
+
+分享一下我的脚本吧，[地址](https://note.youdao.com/)
+
+
+##### GitHub webhooks 设置
+
+进入GitHub上指定的项目 --> setting --> WebHooks&Services --> add webhook --> 输入    IP：端口/job/你的流水线名/buildWithParameters?token=****
+
+pic4
+
+##### 测试
+在已设置该hook的项目内提交代码，push操作，然后你可以看见jenkins的任务出现了。
