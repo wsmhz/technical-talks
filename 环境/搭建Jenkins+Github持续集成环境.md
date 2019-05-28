@@ -61,24 +61,24 @@ Credentials点击Add添加，Kind选择Secret Text 填入刚刚生成密文
 设置完成后，点击TestConnection,提示Credentials verified for user UUserName, rate limit: xxx,则表明有效。
 
 ##### 创建一个流水线项目
-pic1
+![Image text](https://user-gold-cdn.xitu.io/2019/5/28/16afd97965d854e3?w=1072&h=633&f=png&s=75978)
 
 填入github-webhook的参数
-pic2
+![Image text](https://user-gold-cdn.xitu.io/2019/5/28/16afd97dc4bc8f63?w=1070&h=461&f=png&s=36262)
 
 设置流水线脚本
-pic3
+![Image text](https://user-gold-cdn.xitu.io/2019/5/28/16afd97eed5649c7?w=1543&h=830&f=png&s=79594)
 
 完成
 
-分享一下我的脚本吧，[地址](https://note.youdao.com/)
+分享一下我的脚本吧，[地址](https://juejin.im/post/5cecf871e51d45572c05ffda)
 
 
 ##### GitHub webhooks 设置
 
 进入GitHub上指定的项目 --> setting --> WebHooks&Services --> add webhook --> 输入    IP：端口/job/你的流水线名/buildWithParameters?token=****
 
-pic4
+![Image text](https://user-gold-cdn.xitu.io/2019/5/28/16afd98034eecbc6?w=1045&h=667&f=png&s=64612)
 
 ##### 测试
 在已设置该hook的项目内提交代码，push操作，然后你可以看见jenkins的任务出现了。
