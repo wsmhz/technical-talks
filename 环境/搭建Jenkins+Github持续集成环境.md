@@ -71,7 +71,7 @@ Credentials点击Add添加，Kind选择Secret Text 填入刚刚生成密文
 
 完成
 
-分享一下我的脚本吧，[地址](https://juejin.im/post/5cecf871e51d45572c05ffda)
+emmmm~分享一下我的脚本吧，[地址](https://juejin.im/post/5cecf871e51d45572c05ffda)
 
 
 ##### GitHub webhooks 设置
