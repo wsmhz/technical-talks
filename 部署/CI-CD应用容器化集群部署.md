@@ -62,8 +62,9 @@
 &emsp;&emsp; 再次访问就好了，至于swarm的集群知识就不多说了，有多的服务器就使劲加节点吧
 
 效果图
-![Image text](https://user-gold-cdn.xitu.io/2019/5/28/16afdfa9dbe4ee92?w=1902&h=702&f=png&s=247057)
+![Image text](https://user-gold-cdn.xitu.io/2019/5/30/16b068de419dedc2?w=1538&h=716&f=png&s=235135)
 ![Image text](https://user-gold-cdn.xitu.io/2019/5/29/16b012b8c2bc5620?w=1512&h=571&f=png&s=83264)
+![Image text](https://user-gold-cdn.xitu.io/2019/5/30/16b068fb7093fcc5?w=1588&h=912&f=png&s=95109)
 
 
 **最后附上我所搭建的访问地址吧**
