@@ -9,13 +9,14 @@
 &emsp;&emsp; **如果作为一名管理者，一个团队的leader更应该全面掌握产品从无到有，从开发到上线的整个流程，同时确保整个的流程每个人的职责以及各个环节的安全性把控，在此基础上同时提高效率。**
 
 
-&emsp;&emsp; 那么一套自动化部署及运维方案是很有必要的。折腾了几个月搞了下面的这一套方案。
+&emsp;&emsp; 那么一套自动化部署及运维方案是很有必要的。折腾了几个月搞了下面的这一套方案，分享一下吧。
 
+## 大概整个流程图是酱紫的！
 
 ![Image text](https://user-gold-cdn.xitu.io/2019/5/29/16b012c9f32f18a6?w=801&h=528&f=png&s=74081)
 
 首先：
-#### Jenkins + GitHub
+## Jenkins + GitHub
 
 &emsp;&emsp;详见整理的文档--搭建Jenkins+Github持续集成环境，[地址](https://github.com/wsmhz/technical-talks/blob/master/%E7%8E%AF%E5%A2%83/%E6%90%AD%E5%BB%BAJenkins+Github%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90%E7%8E%AF%E5%A2%83.md)
     
@@ -34,9 +35,9 @@
 
 &emsp;&emsp; 其实这一步有很多选择的，高级点的k8s全家桶（有点复杂，后续转为k8s），官方的docker-swarm，我这里就选择官方的了，至于docker-swarm已经在安装docker的时候已经集成进来了，现在需要的是有个可视化界面去编排我们的服务，同时简化操作。
 
-&emsp;&emsp; **我选择的是swirl这个开源插件**,[地址](https://github.com/cuigh/swirl)，开始吧~~
+&emsp;&emsp; **我选择的是swirl这个开源插件，还不错的**,开源[地址](https://github.com/cuigh/swirl)，开始吧~~
 
-### swirl
+## swirl
 ##### 数据库直接用MongoDB ，docker直接启动吧
 
 ```
@@ -67,7 +68,7 @@
 ![Image text](https://user-gold-cdn.xitu.io/2019/5/30/16b068fb7093fcc5?w=1588&h=912&f=png&s=95109)
 
 
-**最后附上我所搭建的访问地址吧**
+### 最后附上我所搭建的访问地址吧
 
 **jenkins**：   http://jenkins.wsmhz.cn
 
