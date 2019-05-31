@@ -18,16 +18,16 @@
 首先：
 ## Jenkins + GitHub
 
-&emsp;&emsp;详见整理的文档--搭建Jenkins+Github持续集成环境，[地址](https://github.com/wsmhz/technical-talks/blob/master/%E7%8E%AF%E5%A2%83/%E6%90%AD%E5%BB%BAJenkins+Github%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90%E7%8E%AF%E5%A2%83.md)
+&emsp;&emsp;详见整理的文档--搭建Jenkins+Github持续集成环境，[地址](https://github.com/wsmhz/technical-talks/blob/master/env/%E6%90%AD%E5%BB%BAJenkins%2BGithub%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90%E7%8E%AF%E5%A2%83.md)
     
     
 ==注意：==
     
 &emsp;&emsp; 1） jenkins步骤中有构建项目，如果是java项目，注意**maven jdk**等环境
     
-&emsp;&emsp; 2） jenkins步骤中有构建docker镜像，**docker环境搭建**，[给个链接吧](https://github.com/wsmhz/technical-talks/blob/master/%E7%8E%AF%E5%A2%83/docker-linux.md)
+&emsp;&emsp; 2） jenkins步骤中有构建docker镜像，**docker环境搭建**，[给个链接吧](https://github.com/wsmhz/technical-talks/blob/master/env/docker-linux.md)
     
-&emsp;&emsp; 3） jenkins步骤中有推送镜像，需要一个**镜像仓库**，这里可以选择的很多，如公共的dockerhub，或者自己搭一个私有仓库，rancher，docker自带的registry等等，我这里就选择docker自带的registry直接部在在同一台服务器上，[再次给链接吧](https://github.com/wsmhz/technical-talks/blob/master/%E7%8E%AF%E5%A2%83/docker-registry%E7%A7%81%E6%9C%89%E4%BB%93%E5%BA%93.md)
+&emsp;&emsp; 3） jenkins步骤中有推送镜像，需要一个**镜像仓库**，这里可以选择的很多，如公共的dockerhub，或者自己搭一个私有仓库，rancher，docker自带的registry等等，我这里就选择docker自带的registry直接部在在同一台服务器上，[再次给链接吧](https://github.com/wsmhz/technical-talks/blob/master/env/docker-registry%E7%A7%81%E6%9C%89%E4%BB%93%E5%BA%93.md)
     
 &emsp;&emsp; **emmmm~接着就是怎么使用这些镜像的问题了**。
 
