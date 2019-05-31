@@ -82,3 +82,5 @@ emmmm~分享一下我的万能脚本吧（通用的哦），这个脚本真是�
 
 ##### 测试
 在已设置该hook的项目内提交代码，push操作，然后你可以看见jenkins的任务出现了。
+
+![Image text](https://user-gold-cdn.xitu.io/2019/5/30/16b07d72ff3e4461?w=1475&h=470&f=png&s=74394)
