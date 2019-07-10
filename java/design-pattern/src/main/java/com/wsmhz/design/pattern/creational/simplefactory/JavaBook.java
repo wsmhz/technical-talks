@@ -3,10 +3,10 @@ package com.wsmhz.design.pattern.creational.simplefactory;
 /**
  * create by tangbj on 2019/7/4
  */
-public class PythonVideo extends Video {
+public class JavaBook extends Book {
 
     @Override
     public void produce() {
-        System.out.println("---produce PythonVideo");
+        System.out.println("------produce JavaBook");
     }
 }
