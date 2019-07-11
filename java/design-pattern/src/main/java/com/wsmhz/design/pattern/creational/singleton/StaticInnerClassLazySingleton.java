@@ -14,6 +14,7 @@ package com.wsmhz.design.pattern.creational.singleton;
 public class StaticInnerClassLazySingleton {
 
     private StaticInnerClassLazySingleton(){
+        // 这种判断只对于饿汉式下适用，懒汉式中并没有作用，因为能通过反射攻击构建实例
         if(SingletonHolder.instance != null){
             throw new RuntimeException("禁止反射构造");
         }
