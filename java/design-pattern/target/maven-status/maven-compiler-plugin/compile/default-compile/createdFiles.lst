@@ -2,12 +2,15 @@ com\wsmhz\design\pattern\creational\abstractfactory\PythonBook.class
 com\wsmhz\design\pattern\creational\simplefactory\BookFactory.class
 com\wsmhz\design\pattern\creational\abstractfactory\Teacher.class
 com\wsmhz\design\pattern\creational\abstractfactory\CourseFactory.class
+com\wsmhz\design\pattern\structural\adapter\Test.class
 com\wsmhz\design\pattern\creational\factorymethod\JavaBookFactory.class
 com\wsmhz\design\pattern\creational\prototype\Test.class
 com\wsmhz\design\pattern\creational\singleton\LazySingleton.class
 com\wsmhz\design\pattern\structural\decorator\Cake.class
 com\wsmhz\design\pattern\creational\singleton\StaticInnerClassLazySingleton.class
+com\wsmhz\design\pattern\structural\adapter\DC50.class
 com\wsmhz\design\pattern\creational\singleton\lazyDoubleCheckThread.class
+com\wsmhz\design\pattern\structural\adapter\DC50Adapter.class
 com\wsmhz\design\pattern\creational\builder\Book.class
 com\wsmhz\design\pattern\creational\singleton\lazySingletonThread.class
 com\wsmhz\design\pattern\creational\abstractfactory\Test.class
@@ -47,6 +50,7 @@ com\wsmhz\design\pattern\structural\decorator\AbstractCakeDecorator.class
 com\wsmhz\design\pattern\creational\factorymethod\BookFactory.class
 com\wsmhz\design\pattern\creational\factorymethod\JavaBook.class
 com\wsmhz\design\pattern\creational\simplefactory\JavaBook.class
+com\wsmhz\design\pattern\structural\adapter\AC220.class
 com\wsmhz\design\pattern\structural\facade\ShippingService.class
 com\wsmhz\design\pattern\structural\decorator\AbstractCake.class
 com\wsmhz\design\pattern\structural\decorator\MilkDecorator.class
