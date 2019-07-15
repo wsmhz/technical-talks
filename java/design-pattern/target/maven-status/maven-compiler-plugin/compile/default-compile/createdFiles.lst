@@ -12,9 +12,12 @@ com\wsmhz\design\pattern\structural\composite\Test.class
 com\wsmhz\design\pattern\creational\prototype\Test.class
 com\wsmhz\design\pattern\creational\singleton\LazySingleton.class
 com\wsmhz\design\pattern\structural\decorator\Cake.class
+com\wsmhz\design\pattern\structural\bridge\SavingAccount.class
 com\wsmhz\design\pattern\creational\singleton\StaticInnerClassLazySingleton.class
 com\wsmhz\design\pattern\structural\adapter\DC50.class
+com\wsmhz\design\pattern\structural\bridge\ABCBank.class
 com\wsmhz\design\pattern\creational\singleton\lazyDoubleCheckThread.class
+com\wsmhz\design\pattern\structural\bridge\DepositAccount.class
 com\wsmhz\design\pattern\creational\builder\Book.class
 com\wsmhz\design\pattern\creational\singleton\lazySingletonThread.class
 com\wsmhz\design\pattern\creational\abstractfactory\Test.class
@@ -22,10 +25,12 @@ com\wsmhz\design\pattern\creational\simplefactory\PythonBook.class
 com\wsmhz\design\pattern\creational\singleton\StaticInnerClassLazySingleton$1.class
 com\wsmhz\design\pattern\structural\decorator\Test.class
 com\wsmhz\design\pattern\creational\factorymethod\PythonBook.class
+com\wsmhz\design\pattern\structural\bridge\Bank.class
 com\wsmhz\design\pattern\structural\decorator\AppleDecorator.class
 com\wsmhz\design\pattern\creational\builder\Test.class
 com\wsmhz\design\pattern\structural\facade\PointsPaymentService.class
 com\wsmhz\design\pattern\creational\abstractfactory\JavaCourseFactory.class
+com\wsmhz\design\pattern\structural\bridge\Account.class
 com\wsmhz\design\pattern\creational\factorymethod\PythonBookFactory.class
 com\wsmhz\design\pattern\structural\facade\GiftExchangeService.class
 com\wsmhz\design\pattern\creational\singleton\ThreadLocalSingleton$1.class
@@ -39,6 +44,7 @@ com\wsmhz\design\pattern\creational\singleton\StaticInnerClassLazySingleton$Sing
 com\wsmhz\design\pattern\structural\flyweight\Employee.class
 com\wsmhz\design\pattern\creational\singleton\LazyDoubleCheckSingleton.class
 com\wsmhz\design\pattern\creational\singleton\ThreadLocalSingletonThread.class
+com\wsmhz\design\pattern\structural\bridge\ICBCBank.class
 com\wsmhz\design\pattern\structural\flyweight\Manage.class
 com\wsmhz\design\pattern\creational\abstractfactory\JavaBook.class
 com\wsmhz\design\pattern\structural\flyweight\Test.class
@@ -58,6 +64,7 @@ com\wsmhz\design\pattern\structural\decorator\AbstractCakeDecorator.class
 com\wsmhz\design\pattern\creational\factorymethod\BookFactory.class
 com\wsmhz\design\pattern\creational\factorymethod\JavaBook.class
 com\wsmhz\design\pattern\creational\simplefactory\JavaBook.class
+com\wsmhz\design\pattern\structural\bridge\Test.class
 com\wsmhz\design\pattern\structural\adapter\AC220.class
 com\wsmhz\design\pattern\structural\facade\ShippingService.class
 com\wsmhz\design\pattern\structural\decorator\AbstractCake.class
