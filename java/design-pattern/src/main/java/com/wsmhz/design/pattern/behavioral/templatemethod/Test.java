@@ -2,7 +2,7 @@ package com.wsmhz.design.pattern.behavioral.templatemethod;
 
 /**
  * Created By tangbj On 2019/7/18
- * Description:
+ * Description: 模板方法模式
  */
 public class Test {
 
