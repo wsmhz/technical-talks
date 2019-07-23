@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.wsmhz</groupId>
-    <artifactId>design-pattern</artifactId>
+    <artifactId>algorithm-dataStructure</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -16,5 +16,4 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
-
 </project>
