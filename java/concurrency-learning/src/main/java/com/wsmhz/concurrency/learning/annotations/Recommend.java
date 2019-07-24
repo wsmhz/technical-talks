@@ -1,4 +1,4 @@
-package com.wsmhzcon.currency.learning.annotations;
+package com.wsmhz.concurrency.learning.annotations;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
