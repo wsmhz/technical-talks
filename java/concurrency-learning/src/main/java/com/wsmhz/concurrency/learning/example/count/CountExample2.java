@@ -11,7 +11,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * Created By tangbj On 2019/7/24
- * Description: 计数器(Atomic)--线程不安全
+ * Description: 计数器(Atomic)--线程安全
  */
 @ThreadSafe
 @Slf4j
