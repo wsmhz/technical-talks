@@ -1,6 +1,7 @@
 package com.wsmhz.concurrency.learning.example.count;
 
 import com.wsmhz.concurrency.learning.annotations.NotThreadSafe;
+import com.wsmhz.concurrency.learning.annotations.ThreadSafe;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.concurrent.CountDownLatch;
@@ -10,11 +11,11 @@ import java.util.concurrent.Semaphore;
 
 /**
  * Created By tangbj On 2019/7/24
- * Description: 简单的计数器--线程不安全
+ * Description: 计数器(同步锁)--线程不安全
  */
-@NotThreadSafe
+@ThreadSafe
 @Slf4j
-public class CountExample {
+public class CountExample3 {
 
     private static int clientTotal = 5000;
 
@@ -30,7 +31,7 @@ public class CountExample {
             executorService.execute(()->{
                 try {
                     semaphore.acquire();
-                    count ++;
+                    add();
                     semaphore.release();
 
                     countDownLatch.countDown();
@@ -42,6 +43,10 @@ public class CountExample {
         countDownLatch.await();
         executorService.shutdown();
         log.info("count:" + count);
+    }
+
+    private synchronized static void add(){
+        count ++;
     }
 
 }
