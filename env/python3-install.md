@@ -47,7 +47,9 @@ make install
 ==注意！==./configure时报错，configure: error: no acceptable C compiler found in $PATH
 
 ```
-sudo yum install gcc-c++
+sudo yum -y install gcc gcc-c++ 
+sudo yum -y install zlib zlib-devel
+sudo yum -y install libffi-devel 
 ```
 
 
