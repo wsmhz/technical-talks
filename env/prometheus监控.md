@@ -111,3 +111,113 @@ docker run --name=prometheus -d \
 
 
 最后可以跑个Grafana来展示，超级炫酷，这里就不介绍了。
+
+
+
+
+### **************************  分割线  *********************************
+
+#### swirl结合Prometheus的配置
+
+````
+{
+  "name": "cpu",
+  "title": "CPU使用率",
+  "desc": "当前节点CPU使用率",
+  "metrics": [
+    {
+      "legend": "${name}",
+      "query": "AVG(irate(node_cpu_seconds_total{mode=\"user\"}[1m]))*100+AVG(irate(node_cpu_seconds_total{mode=\"system\"}[1m]))*100"
+    }
+  ],
+  "kind": "",
+  "dashboard": "home",
+  "type": "gauge",
+  "unit": "percent:100",
+  "width": 2,
+  "height": 200,
+  "options": {}
+}
+````
+````
+{
+  "name": "memory",
+  "title": "内存占用",
+  "desc": "服务器内存使用",
+  "metrics": [
+    {
+      "legend": "${instance}",
+      "query": "node_memory_MemTotal_bytes-node_memory_MemAvailable_bytes"
+    }
+  ],
+  "kind": "",
+  "dashboard": "home",
+  "type": "line",
+  "unit": "size:bytes",
+  "width": 4,
+  "height": 200,
+  "options": {}
+}
+````
+````
+{
+  "name": "memory-use",
+  "title": "内存使用率",
+  "desc": "当前节点内存使用率",
+  "metrics": [
+    {
+      "legend": "${instance}",
+      "query": "(SUM(node_memory_MemTotal_bytes)-SUM(node_memory_MemAvailable_bytes))/SUM(node_memory_MemTotal_bytes)*100"
+    }
+  ],
+  "kind": "",
+  "dashboard": "home",
+  "type": "gauge",
+  "unit": "percent:100",
+  "width": 2,
+  "height": 200,
+  "options": {}
+}
+````
+````
+{
+  "name": "node_load1",
+  "title": "服务器负载",
+  "desc": "服务器最近一分钟的负载",
+  "metrics": [
+    {
+      "legend": "${instance}",
+      "query": "node_load1"
+    }
+  ],
+  "kind": "",
+  "dashboard": "home",
+  "type": "line",
+  "unit": "",
+  "width": 4,
+  "height": 200,
+  "options": {}
+}
+````
+````
+{
+  "name": "container_memory_total",
+  "title": "Total memory usage",
+  "desc": "Total memory usage of all containers",
+  "metrics": [
+    {
+      "legend": "${host_name}",
+      "query": "sum(container_memory_usage_bytes{image!=\"\"}) by(host_name)"
+    }
+  ],
+  "kind": "",
+  "dashboard": "home",
+  "type": "pie",
+  "unit": "size:bytes",
+  "width": 3,
+  "height": 200,
+  "options": {}
+}
+````
+配置好上述的图表之后，再在设置里面配置好Prometheus address
+地址
